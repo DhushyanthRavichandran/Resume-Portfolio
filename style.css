@@ -1,0 +1,129 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3e3b3b;
+    padding: 50px;
+}
+
+.container-1, .container-2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #121010;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+     
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.logo, .project-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img, .project-logo img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0; 
+    border: none; 
+    transition: transform 0.3s ease;
+}
+
+.logo h3, .project-logo h3 {
+    margin-top: 10px;
+}
+
+.logo img:hover, .project-logo img:hover {
+    transform: scale(1.1);
+}
+
+.connections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.connections .logo {
+    width: calc(50% - 20px); 
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.connections .logo img {
+    width: 40%; 
+    height: auto;
+}
+
+.Projects {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-logo {
+    display: block; 
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project-logo img {
+    width: 80%;
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+
+.project-logo img:hover {
+    transform: scale(1.1);
+}
+
+h1, h3 {
+    transition: background-color 0.5s ease;
+}
+
+
+.logo img, .project-logo img {
+    transition: transform 0.5s ease;
+}
+
+.project-logo img:hover {
+    transform: scale(1.9); 
+}
+
+.connections {
+    transition: opacity 0.5s ease;
+}
+
+.connections:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+}
